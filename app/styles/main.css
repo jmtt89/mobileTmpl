@@ -1,0 +1,67 @@
+body{
+  background-color: #303030;
+}
+
+.card{
+  margin: 8px 8px;
+
+  border-radius: 2px;
+  border: 0;
+
+
+  background-color: #424242;
+  color: rgba(255, 255, 255, 1);
+
+  box-shadow: 3px 3px 3px rgba(10, 10, 10, 0.35)
+}
+
+.title{
+  margin: 0;
+  padding: 24px 16px 0px 16px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.date{
+  color: rgba(255, 255, 255, 0.70); 
+}
+
+.content{
+    padding: 16px;
+}
+
+.actions{
+  padding: 8px;
+  text-align: right;
+}
+
+hr.divider{
+  color: rgba(255, 255, 255, 0.12); 
+  margin: 0;
+}
+
+.actions .btn{
+  color: rgba(255, 255, 255, 0.70);
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 7px 4px 4px 4px;
+}
+
+.actions .btn-link:hover,.actions .btn-link:focus{
+  color: rgba(255, 255, 255, 0.70);
+  border-color: rgba(255, 255, 255, 0.70);
+  outline: none;
+}
+
+.owl-carousel .owl-item{
+  min-height: 150px;
+}
+
+.truncate {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
