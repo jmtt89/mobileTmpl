@@ -55,9 +55,6 @@ hr.divider{
   outline: none;
 }
 
-.owl-carousel .owl-item{
-  min-height: 150px;
-}
 
 .truncate {
   width: 80%;

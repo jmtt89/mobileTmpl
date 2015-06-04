@@ -4,6 +4,7 @@
   "dependencies": {
     "bootstrap": "~3.2.0",
     "owl.carousel": "*",
-    "moment": "~2.10.3"
+    "moment": "~2.10.3",
+    "slick-carousel": "~1.5.5"
   }
 }

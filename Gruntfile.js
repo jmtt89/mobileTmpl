@@ -189,7 +189,8 @@ module.exports = function (grunt) {
     // additional tasks can operate on them
     useminPrepare: {
       options: {
-        dest: '<%= config.dist %>'
+        dest: '<%= config.dist %>',
+        flow: { steps: { 'js': ['concat'], 'css': ['concat']}, post: {}}
       },
       html: '<%= config.app %>/index.html'
     },
@@ -301,6 +302,15 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= config.dist %>'
+        },{
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/slick-carousel/slick',
+          src: 'fonts/*',
+          dest: '<%= config.dist %>/styles'
+        },{
+          src: 'bower_components/slick-carousel/slick/ajax-loader.gif',
+          dest: '<%= config.dist %>/styles/ajax-loader.gif'
         }]
       },
       styles: {
@@ -374,8 +384,6 @@ module.exports = function (grunt) {
     'concurrent:dist',
     'autoprefixer',
     'concat',
-    'cssmin',
-    'uglify',
     'copy:dist',
     'rev',
     'usemin',
